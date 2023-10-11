@@ -1,0 +1,36 @@
+{%extends 'tempapp/base.html'%}
+{%block body_block%}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<center>
+<body>
+<h2>EMPLOYEE INFORMATION</h2>
+<table border='2'>
+<thead>
+	<th>Emp No</th>
+	<th>Emp Name</th>
+	<th>Emp Salary</th>
+	<th>Emp Email</th>
+	
+</thead>
+{%for i in emp%}
+<tr>
+	<td>{{i.eno}}</td>
+	<td>{{i.ename}}</td>
+	<td>{{i.esal}}</td>
+	<td>{{i.eaddr}}</td>
+	
+</tr>
+{%endfor%}
+</table>
+<br></br>
+
+</body>
+</center>
+</html>
+
+
+{%endblock%}
